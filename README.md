@@ -2,7 +2,7 @@
 
 ## Overview
 
-This repository contains the configuration and deployment scripts for the Secure DevOps assignment using the Saleor platform. Saleor is a high-performance e-commerce solution built with Python and Django. The project involves deploying Saleor using Docker and Kubernetes, and integrating additional services for a complete e-commerce setup.
+This repository contains the configuration and deployment scripts for the Secure DevOps assignment using the Saleor platform. Saleor is a high-performance e-commerce solution built with Python and Django. The project involves deploying Saleor using Docker and Kubernetes, and integrating additional services for a complete e-commerce setup.In this assignment, the Saleor platform is utilized as a submodule.
 
 ## Repository Structure
 
@@ -103,5 +103,8 @@ This repository contains the configuration and deployment scripts for the Secure
 ## Configuration
 
 Update environment variables and configuration files as needed for your deployment. Refer to `backend.env`, `common.env`, and ConfigMap files for specific configuration settings.
+
+## Convert a Docker Compose file to Kubernetes manifests and output to the current directory
+kompose convert -f docker-compose.yml
 
 
