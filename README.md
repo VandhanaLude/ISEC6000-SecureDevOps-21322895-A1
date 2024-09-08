@@ -56,7 +56,7 @@ This repository contains the configuration and deployment scripts for the Secure
 1. **Docker**: Ensure Docker is installed on Ubuntu.
 2. **Kubernetes**: Ensure Kubernetes is set up and configured.
 3. **Kubectl**: Ensure `kubectl` is installed and configured to interact with your Kubernetes cluster.
-4. **GKE**: Goole cloud account is configured
+4. **GKE**: Goole cloud account is configured and enable container registry.
 
 ## Setup and Deployment
 
@@ -70,6 +70,15 @@ This repository contains the configuration and deployment scripts for the Secure
 2. **Start Services with Docker Compose**:
    ```bash
    docker-compose up
+   ```
+
+3. **Tagged Docker Images to GCR path**:
+   ```bash
+   docker tag SOURCE_IMAGE[:TAG] TARGET_IMAGE[:TAG]
+   ```
+4. **Push Docker Images**:
+   ```bash
+   docker push TARGET_IMAGE[:TAG]
    ```
 
 ### Kubernetes Deployment
